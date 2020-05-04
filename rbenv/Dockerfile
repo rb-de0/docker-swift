@@ -1,4 +1,4 @@
-FROM swift:4.2
+FROM swift:5.2
 MAINTAINER rb_de0 <rebirth.de0@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -6,7 +6,7 @@ ENV DEBCONF_NOWARNINGS yes
 ENV RUBY_VERSION 2.6.0
 
 RUN apt-get -q update
-RUN apt-get -y install build-essential libreadline-dev zlib1g-dev libssl-dev
+RUN apt-get -y install build-essential libreadline-dev zlib1g-dev libssl-dev curl
 
 RUN git clone https://github.com/sstephenson/rbenv.git /root/.rbenv
 RUN git clone https://github.com/rbenv/ruby-build.git /root/.rbenv/plugins/ruby-build
