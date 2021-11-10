@@ -1,4 +1,4 @@
-FROM swift:5.2
+FROM swift:5.5
 MAINTAINER rb_de0 <rebirth.de0@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
